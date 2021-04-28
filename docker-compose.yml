@@ -1,0 +1,18 @@
+version: '3'
+services:
+  app:
+    build: .
+    command: npm run dev
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/usr/app
+  db:
+    container_name: 'database-node'
+    image: mariadb:10.5.9-focal
+    restart: always
+    ports:
+      - '3308:3306'
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - TZ=America/Sao_Paulo
