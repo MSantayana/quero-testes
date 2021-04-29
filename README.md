@@ -1,9 +1,5 @@
 # quero-testes
 
-Baixe o repositório com:
-
-`git clone`
-
 Suba os containeres do nodejs e mariadb com:
 
 `docker-compose up`
