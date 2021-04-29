@@ -1,6 +1,7 @@
 # quero-testes
+Para rodar esta aplicação, é necessário ter Docker instalado.
 
-Suba os containeres do nodejs e mariadb com:
+Suba os containeres do NodeJS e MariaDB com:
 
 `docker-compose up`
 
