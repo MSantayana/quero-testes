@@ -1,4 +1,4 @@
-# quero-testes
+# Quero Testes
 Para rodar esta aplicação, é necessário ter Docker instalado.
 
 Suba os containeres do NodeJS e MariaDB com:
