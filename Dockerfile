@@ -5,6 +5,7 @@ ADD . /
 WORKDIR /usr/app
 
 COPY package*.json ./
+RUN npm install -g express
 RUN npm install
 
 COPY . .
