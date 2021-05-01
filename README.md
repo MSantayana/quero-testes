@@ -8,10 +8,10 @@ Suba os containeres do NodeJS e MariaDB com:
 
 Libere o populamento do banco de dados com:
 
-`chmod +x some_data/.auto_gambs.sh`
+`chmod +x some_data/.auto_gambs.sh`running
 
 
-Após o container "database-bands-node" subir, popule o banco de dados com:
+Após o container do MariaDB subir (database-bands-node), popule o banco de dados com:
 
 `./solve_gambs.sh`
 
