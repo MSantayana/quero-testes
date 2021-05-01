@@ -7,7 +7,8 @@ services:
     ports:
       - '3000:3000'
     volumes:
-      - .:/usr/app
+      - ${PWD}:/app/server
+    working_dir: /app/server  
   db:
     container_name: 'database-bands-node'
     image: mariadb:10.5.9-focal

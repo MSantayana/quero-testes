@@ -1,11 +1,9 @@
 FROM node:14.16.1-alpine
 
-ADD . /
-
-WORKDIR /usr/app
+WORKDIR /app/server
 
 COPY package*.json ./
-RUN npm install -g express
+RUN npm install express
 RUN npm install
 
 COPY . .
