@@ -3,12 +3,12 @@ services:
   app:
     build: .
     container_name: 'node-app'
-    command: npm run dev
+    command: sh -c "npm install && npm run dev"
     ports:
       - '3000:3000'
     volumes:
       - ${PWD}:/app/server
-    working_dir: /app/server  
+    working_dir: /app/server
   db:
     container_name: 'database-bands-node'
     image: mariadb:10.5.9-focal
@@ -18,5 +18,4 @@ services:
       - '3307:3306'
     environment:
       - MYSQL_ROOT_PASSWORD=root
-#      - MYSQL_TCP_PORT=3307
       - TZ=America/Sao_Paulo
